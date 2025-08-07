@@ -10,11 +10,24 @@
     <meta property="og:title" content="SIT 725 Prac 1">
     <meta property="og:type" content="website">
     <meta property="og:description" content="basic template for SIT 725 Prac 1">
+    <link rel="stylesheet" href="css/style.css">
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 </head>
 
 <body>
+    <!-- Navbar -->
+    <nav>
+        <div class="nav-wrapper blue">
+            <a href="#!" class="brand-logo" style="padding-left: 15px;">SIT725 App</a>
+            <ul class="right hide-on-med-and-down">
+                <li><a href="/">Home</a></li>
+                <li><a href="/about">About</a></li>
+                <li><a href="/contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
     <div class="container">
         <div class="row">
             <div class="col s12">
@@ -25,6 +38,79 @@
             </div>
         </div>
     </div>
+    <div class="row" style="margin-top: 30px;">
+        <!-- Card 1 -->
+        <div class="col s12 m4">
+            <div class="card">
+                <div class="card-content">
+                    <span class="card-title">Feature 1</span>
+                    <p>This is an example card to show content.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="col s12 m4">
+            <div class="card">
+                <div class="card-content">
+                    <span class="card-title">Feature 2</span>
+                    <p>Materialize cards help organize content nicely.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="col s12 m4">
+            <div class="card">
+                <div class="card-content">
+                    <span class="card-title">Feature 3</span>
+                    <p>You can add text, buttons, or images inside cards.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row" style="margin-top: 40px;">
+        <div class="col s12 m8 offset-m2">
+            <div class="card-panel">
+                <h4 class="center-align" style="margin-bottom: 40px;">Submit Your Details</h4>
+                <form class="col s12">
+                    <div class="row" style="margin-top: 20px;">
+                        <div class="input-field col s6">
+                            <input id="first_name" type="text" class="validate">
+                            <label for="first_name">First Name</label>
+                        </div>
+                        <div class="input-field col s6">
+                            <input id="last_name" type="text" class="validate">
+                            <label for="last_name">Last Name</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <input id="email" type="email" class="validate">
+                            <label for="email">Email</label>
+                        </div>
+                    </div>
+                    <div class="row center-align">
+                        <button class="btn waves-effect waves-light" type="submit">
+                            Submit</button>
+                    </div>
+                    <div class="row" id="formResult" style="margin-top:20px; display:none;">
+                        <div class="col s12">
+                            <div class="card green lighten-4">
+                                <div class="card-content">
+                                    <span class="card-title">Form Submitted</span>
+                                    <p id="output"></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </div>
+
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script src="js/scripts.js"></script>

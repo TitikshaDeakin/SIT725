@@ -7,3 +7,20 @@ function changeText() {
 function getRandomNumberBetween(min, max) {
     return Math.floor(Math.random() * (max - min + 1) + min);
 }
+document.addEventListener('DOMContentLoaded', function() {
+  const form = document.querySelector('form');
+  form.addEventListener('submit', function(event) {
+    event.preventDefault();
+    const firstName = document.getElementById('first_name').value;
+    const lastName = document.getElementById('last_name').value;
+    const email = document.getElementById('email').value;
+
+    document.getElementById('output').innerText =
+      `Name: ${firstName} ${lastName}\nEmail: ${email}`;
+    
+    const resultCard = document.getElementById('formResult');
+    resultCard.style.display = 'block';
+    resultCard.classList.add('fade-in'); // apply animation
+  });
+});
+
