@@ -1,0 +1,21 @@
+{
+  "dependencies": {
+    "body-parser": "^2.2.0",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.1",
+    "express": "^5.1.0",
+    "mongoose": "^8.17.0",
+    "socket.io": "^4.8.1",
+    "socket.io-client": "^4.8.1"
+  },
+  "devDependencies": {
+    "chai": "^4.3.10",
+    "mocha": "^11.1.0",
+    "supertest": "^7.1.4"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "test": "mocha \"**/__tests__/**/*.test.js\"",
+    "test:watch": "mocha --watch \"**/__tests__/**/*.test.js\""
+  }
+}
